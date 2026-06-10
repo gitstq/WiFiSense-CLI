@@ -1,0 +1,27 @@
+# WiFiSense-CLI - Zero External Dependencies
+#
+# This project uses ONLY the Python standard library.
+# No third-party packages are required.
+#
+# Python version requirement: >= 3.8
+#
+# Standard library modules used:
+#   - argparse (CLI parsing)
+#   - curses (TUI dashboard, Unix only)
+#   - csv (CSV export)
+#   - ctypes (Windows console color detection)
+#   - dataclasses (data structures)
+#   - datetime (timestamps)
+#   - deque (rolling buffers)
+#   - enum (enumerations)
+#   - json (configuration and data persistence)
+#   - math (statistical calculations)
+#   - os (file system operations)
+#   - platform (OS detection)
+#   - re (regular expressions)
+#   - shutil (file operations)
+#   - statistics (statistical functions)
+#   - subprocess (external command execution)
+#   - sys (system interface)
+#   - time (timing and delays)
+#   - urllib (HTTP requests for webhooks)

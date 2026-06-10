@@ -1,0 +1,52 @@
+{
+  "scanner": {
+    "interface": "auto",
+    "poll_interval": 1.0,
+    "scan_timeout": 10.0,
+    "max_retries": 3,
+    "retry_delay": 0.5,
+    "include_hidden": false
+  },
+  "analyzer": {
+    "moving_average_window": 5,
+    "ewma_alpha": 0.3,
+    "z_score_threshold": 2.0,
+    "iqr_factor": 1.5,
+    "trend_window": 10,
+    "anomaly_cooldown": 5.0,
+    "fingerprint_min_aps": 2
+  },
+  "events": {
+    "enabled": true,
+    "rules_file": "rules.json",
+    "cooldown": 30.0,
+    "max_events_per_minute": 10,
+    "log_file": "events.log"
+  },
+  "dashboard": {
+    "refresh_rate": 0.5,
+    "history_length": 60,
+    "show_hidden": false,
+    "color_scheme": "default"
+  },
+  "data": {
+    "storage_dir": "data",
+    "session_file": "session.json",
+    "max_sessions": 100,
+    "csv_export_dir": "exports",
+    "retention_days": 30
+  },
+  "logging": {
+    "level": "INFO",
+    "file": null,
+    "max_size_mb": 10,
+    "backup_count": 3
+  },
+  "notification": {
+    "ntfy_url": "https://ntfy.sh",
+    "ntfy_topic": "",
+    "webhook_url": "",
+    "webhook_method": "POST",
+    "webhook_headers": {}
+  }
+}
